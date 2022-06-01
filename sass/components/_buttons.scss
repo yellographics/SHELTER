@@ -1,0 +1,92 @@
+.button {
+  padding: 16px 45px;
+  border-radius: 100px;
+  font-family: $secondary-font;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  color: $color-button-text;
+  letter-spacing: 0.06em;
+  color: $color-button-text;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-brand-light;
+    border-color: $color-brand-light;
+    transition: 0.3s;
+  }
+
+  @include media-tablet {
+    padding: 14px 40px;
+  }
+}
+
+.button_colored {
+  background-color: $color-brand;
+
+  @include media-tablet {
+    padding: 15px 42px;
+  }
+}
+
+.button_bordered {
+  border: 2px solid $color-brand;
+  background-color: transparent;
+}
+
+.button_nav {
+  display: inline-block;
+  padding: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 100px;
+  color: $color-button-text;
+
+  &:hover {
+    background-color: $color-brand-light;
+    border-color: $color-brand-light;
+  }
+}
+
+.button-right {
+  position: relative;
+
+  &::after {
+    content: url("assets/icons/main-page/arrow-right.svg");
+    position: absolute;
+    top: 10px;
+    left: 18px;
+  }
+}
+
+.button-left {
+  position: relative;
+
+  &::after {
+    content: url("assets/icons/main-page/arrow-left.svg");
+    position: absolute;
+    top: 10px;
+    left: 18px;
+  }
+}
+
+.button_disabled {
+  border-color: $color-first-parapraph;
+  color: $color-first-parapraph;
+  cursor: default;
+
+  &:hover {
+    border-color: $color-first-parapraph;
+    background-color: transparent;
+  }
+}
+
+.button_active {
+  background-color: $color-brand;
+  border-color: $color-brand;
+
+  &:hover {
+    cursor: default;
+    background-color: $color-brand;
+    border-color: $color-brand;
+  }
+}

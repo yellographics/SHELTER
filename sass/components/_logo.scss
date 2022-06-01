@@ -1,0 +1,31 @@
+.logo__title {    
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.5rem;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.logo__title_main-page {
+    color: $color-brand;
+}
+
+.logo__title_pets-page {
+    color: $color-heading;
+}
+
+.logo__desc {
+    font-family: $primary-font;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.logo__desc_main-page {
+    color: white;
+}
+

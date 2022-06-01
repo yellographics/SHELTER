@@ -1,0 +1,33 @@
+.pet-card {
+  width: 270px;
+  height: 435px;
+  border-radius: 9px;
+  background-color: $color-card-backround;
+  padding-bottom: 30px;
+  overflow: hidden;
+
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    transition: 0.3s;
+
+    .button {
+      background-color: $color-brand-light;
+      border-color: $color-brand-light;
+      transition: 0.3s;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    margin-top: 26px;
+    margin-bottom: 28px;
+    font-family: $secondary-font;
+    font-size: 2rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.06em;
+  }
+}

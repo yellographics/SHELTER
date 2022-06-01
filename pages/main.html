@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shelter - Main page</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
+      type="image/png"
+      sizes="16x16"
+      rel="icon"
+      href="../assets/icons/favicon.png"
+    />
+  </head>
+  <body>
+    <div class="overflow"></div>
+    
+    </div>    
+    
+    <header class="header header_main">
+      <div class="wrapper">
+        <div class="flex-layout flex-layout_header">
+          <div class="logo">
+            <a href="#">
+              <p class="logo__title logo__title_main-page">Cozy house</p>
+              <p class="logo__desc logo__desc_main-page">
+                Shelter for pets in Boston
+              </p>
+            </a>
+          </div>
+          <nav class="header__navigation">
+            <ul class="navigation">
+              <li class="navigation__link navigation__link_active">
+                <a href="#">About the shelter</a>
+              </li>
+              <li class="navigation__link"><a href="pets.html">Our pets</a></li>
+              <li class="navigation__link">
+                <a href="#help">Help the shelter</a>
+              </li>
+              <li class="navigation__link"><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="header__navigation-mobile">            
+            <div class="mobile-header">
+              <div class="hamburger">
+                <div class="hamburger__line hamburger__line_main"></div>
+                <div class="hamburger__line hamburger__line_main"></div>
+                <div class="hamburger__line hamburger__line_main"></div>
+              </div>
+            </div>    
+            
+            <div class="mobile-menu">
+              <div class="logo logo-mobile">
+                <a href="#">
+                  <p class="logo__title logo__title_main-page">Cozy house</p>
+                  <p class="logo__desc logo__desc_main-page">
+                    Shelter for pets in Boston
+                  </p>
+                </a>
+              </div>
+              <nav>
+                <ul class="navigation">
+                  <li class="navigation__link navigation__link_active">
+                    <a href="#">About the shelter</a>
+                  </li>
+                  <li class="navigation__link"><a href="pets.html">Our pets</a></li>
+                  <li class="navigation__link">
+                    <a href="#help">Help the shelter</a>
+                  </li>
+                  <li class="navigation__link"><a href="#contacts">Contacts</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="visually-hidden">Shelter for pets in Boston</h1>
+      <section class="hero">
+        <div class="wrapper flex-layout">
+          <div class="hero__info">
+            <h2 class="section-title hero__section-title">
+              Not only people<br />need a house
+            </h2>
+            <p>
+              We offer to give a chance to a little and nice puppy with an
+              extremely wide and open heart. He or she will love you more than
+              anybody else in the world, you will see!
+            </p>
+            <a href="#friends" class="button button_colored">Make a friend</a>
+          </div>
+          <div class="hero__image"></div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="wrapper flex-layout">
+          <div class="about__image"></div>
+          <div class="about__text">
+            <h2 class="section-title">About the shelter<br />“Cozy House”</h2>
+            <p>
+              Currently we have 121 dogs and 342 cats on our hands and
+              statistics show that only 20% of them will find a family. The
+              others will continue to live with us and will be waiting for a
+              lucky chance to become dearly loved.
+            </p>
+            <p>
+              We feed our wards with the best food and make sure that they do
+              not get sick, feel comfortable (including psychologically) and
+              well. We are supported by 87 volunteers and 28 employees of
+              various skill levels. About 12% of the animals are taken by the
+              shelter staff. Taking care of the animals, they become attached to
+              the pets and would hardly ever leave them alone.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="our-friends" id="friends">
+        <div class="popup__window">
+          <div class="popup__info"></div>
+          <div class="close"></div>
+        </div> 
+        <div class="wrapper flex-layout">
+          <h2 class="section-title">
+            Our friends who<br />are looking for a house
+          </h2>
+          
+             
+          <div class="slider flex-layout">
+            <button
+              class="button button_bordered button_nav button-left"
+            ></button>
+            <div class="slider__track flex-layout">
+              
+              <div class="pet-card" id="4">
+                <img
+                  src="../assets/images/pet-cards/katrine.jpg"
+                  alt="katrine-cat"
+                />
+                <p>Katrine</p>
+                <button class="button button_bordered">Learn more</button>
+              </div>
+              <div class="pet-card" id="0">
+                <img
+                  src="../assets/images/pet-cards/jennifer.jpg"
+                  alt="jennifer-dog"
+                />
+                <p>Jennifer</p>
+                <button class="button button_bordered">Learn more</button>
+              </div>
+              <div class="pet-card" id="2">
+                <img
+                  src="../assets/images/pet-cards/woody.jpg"
+                  alt="woody-dog"
+                />
+                <p>Woody</p>
+                <button class="button button_bordered">Learn more</button>
+              </div>
+            </div>
+            <button
+              class="button button_bordered button_nav button-right"
+            ></button>
+          </div>
+          <a href="pets.html" class="button button_colored"
+            >Get to know the rest</a
+          >
+        </div>
+      </section>
+      <section class="help" id="help">
+        <div class="wrapper">
+          <h2 class="section-title">How you can help<br />our shelter</h2>
+          <ul class="flex-layout">
+            <li class="help__category help__category_food">Pet food</li>
+            <li class="help__category help__category_transportation">
+              Transportation
+            </li>
+            <li class="help__category help__category_toys">Toys</li>
+            <li class="help__category help__category_cups">Bowls and cups</li>
+            <li class="help__category help__category_shampoos">Shampoos</li>
+            <li class="help__category help__category_vitamins">Vitamins</li>
+            <li class="help__category help__category_medicines">Medicines</li>
+            <li class="help__category help__category_leashes">
+              Collars / leashes
+            </li>
+            <li class="help__category help__category_sleep">Sleeping areas</li>
+          </ul>
+        </div>
+      </section>
+      <section class="donation">
+        <div class="wrapper flex-layout">
+          <div class="donation__image"></div>
+          <div class="donation__info">
+            <h2 class="section-title">You can also<br />make a donation</h2>
+            <p class="donation__info_subheading">
+              Name of the bank / Type of bank account
+            </p>
+            <a href="##"
+              ><p class="donation__info_card-info">
+                8380 2880 8028 8791 7435
+              </p></a
+            >
+            <p class="donation__info_legal-info">
+              Legal information and lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+              ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" id="contacts">
+      <div class="wrapper">
+        <div class="flex-layout flex-layout_footer">
+          <div class="infoblock">
+            <p class="infoblock__title">For questions and suggestions</p>
+            <a href="mailto:email@shelter.com"
+              ><p class="infoblock__item infoblock__item_email">
+                email@shelter.com
+              </p></a
+            >
+            <a href="tel:136745677554"
+              ><p class="infoblock__item infoblock__item_phone">
+                +13 674 567 75 54
+              </p></a>
+          </div>
+          <div class="infoblock">
+            <p class="infoblock__title">We are waiting for your visit</p>
+            <a target="_blank" href="https://goo.gl/maps/pgHNftoBgcPUekQg6"
+              ><p class="infoblock__item infoblock__item_address">
+                1 Central Street, Boston<br />(entrance from the store)
+              </p></a
+            >
+            <a target="_blank" href="https://goo.gl/maps/pgHNftoBgcPUekQg6"
+              ><p
+                class="infoblock__item infoblock__item_address infoblock__item_address-special"
+              >
+                18 South Park, London
+              </p></a
+            >
+          </div>
+          <div class="footer__image"></div>
+        </div>
+      </div>
+    </footer>   
+    <script src="../script.js"></script>
+  </body>
+</html>

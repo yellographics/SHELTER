@@ -1,0 +1,17 @@
+.pagination {
+    display: flex;
+    gap: 20px;
+
+    @include media-mobile {
+        gap: 10px;
+    }
+
+    .button_nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: $secondary-font;
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+}

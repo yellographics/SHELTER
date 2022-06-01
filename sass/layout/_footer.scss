@@ -1,0 +1,152 @@
+.footer {
+  background-image: url("assets/images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .wrapper {
+    padding-top: 56px;
+
+    @include media-tablet {
+      width: 704px;
+      padding-top: 32px;
+    }
+
+    @include media-mobile {
+      width: 300px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 30px;
+    }
+
+    .flex-layout_footer {
+      gap: 160px;
+
+      @include media-tablet {
+        gap: 60px;
+      }
+
+      @include media-mobile {
+        .infoblock {
+          margin-bottom: -12px;
+        }
+      }
+
+      .infoblock__title {
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 3.5rem;
+        line-height: 4.5rem;
+        letter-spacing: 0.06em;
+        color: white;
+        margin-bottom: 5px;
+        width: 279px;
+
+        @include media-mobile {
+          font-size: 2.5rem;
+          line-height: 3.2rem;
+          margin-left: 10px;
+        }
+      }
+
+      .infoblock__item {
+        font-family: $secondary-font;
+        font-size: 2rem;
+        line-height: 2.3rem;
+        letter-spacing: 0.06em;
+        color: $color-brand;
+        font-weight: 400;
+        margin-top: 46px;
+        padding-left: 60px;
+        position: relative;
+
+        @include media-mobile {
+          padding-left: 66px;
+        }
+      }
+
+      .infoblock__item_email {
+        &::after {
+          content: url("assets/icons/footer/email.svg");
+          position: absolute;
+          top: -4px;
+          left: 0;
+
+          @include media-mobile {
+            top: -8px;
+            left: 24px;
+          }
+        }
+      }
+
+      .infoblock__item_phone {
+        &::after {
+          content: url("assets/icons/footer/phone.svg");
+          position: absolute;
+          top: -2px;
+          left: 0;
+
+          @include media-mobile {
+            top: -4px;
+            left: 30px;
+          }
+        }
+      }
+
+      .infoblock__item_address {
+        margin-top: 35px;
+        padding-left: 40px;
+
+        @include media-mobile {
+          padding-left: 28px;
+          padding-bottom: 10px;
+        }
+
+        &::after {
+          content: url("assets/icons/footer/map.svg");
+          position: absolute;
+          top: -2px;
+          left: 0;
+
+          @include media-mobile {
+            top: 6px;
+            left: 0;
+          }
+        }
+      }
+
+      .infoblock__item_address-special {
+        &::after {
+          @include media-mobile {
+            top: -6px;
+            left: 0;
+          }
+        }
+      }
+
+      .footer__image {
+        background-image: url("assets/images/footer/footer-puppy.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 300px;
+        height: 310px;
+        margin-top: -16px;
+        margin-left: 8px;
+
+        @include media-tablet {
+          margin-top: 10px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        @include media-mobile {
+          width: 260px;
+          height: 270px;
+          margin-top: -12px;
+        }
+      }
+    }
+  }
+}

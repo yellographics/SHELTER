@@ -1,0 +1,161 @@
+.popup__window {
+    display: none;    
+    position: fixed;    
+    top: calc(50% - 250px);
+    left: calc(50% - 450px);
+    z-index: 18;
+    width: 900px;
+    height: 500px;
+    box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background: $color-card-backround;
+    border-radius: 9px;
+
+    .close {
+        position: absolute;
+        background-image: url('assets/icons/popup.svg');
+        background-repeat: no-repeat;
+        background-position: center; 
+        top: -52px;
+        right: -30px;
+        width: 52px;
+        height: 52px;
+        border: 2px solid $color-brand;
+        border-radius: 100px;
+
+        &:hover {
+            cursor: pointer;
+            border-color: $color-brand-light;
+            background-color: $color-brand-light;
+        }
+    }
+
+    .popup__info {
+        display: flex;  
+        height: 100%;   
+               
+
+        img {
+            width: 500px;
+            height: 500px;
+
+            @include media-tablet{
+                width: 350px;
+                height: 350px;
+            }
+
+            @include media-mobile {
+                display: none;
+            }
+        }
+
+        .popup__text {    
+            height: 100%;   
+                    
+            padding-top: 50px;
+            padding-left: 30px;
+            padding-right: 20px;
+
+            @include media-tablet {
+                overflow-y: scroll; 
+                padding-top: 10px;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            @include media-mobile {                
+                padding: 10px;
+            }
+
+            .popup__heading {
+                font-family: $secondary-font;
+                font-weight: 400;
+                font-size: 3.5rem;
+                line-height: 4.5rem;
+                letter-spacing: 0.06em;
+                margin-bottom: 20px;
+
+                @include media-mobile {
+                    text-align: center;
+                }
+            }
+
+            .popup__subheading {
+                font-family: $secondary-font;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 2.3rem;
+                letter-spacing: 0.06em;
+
+                @include media-mobile {
+                    text-align: center;
+                }
+                
+            }
+
+            p {
+                font-family: $secondary-font;
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 1.7rem;
+                letter-spacing: 0.06em;
+                margin-top: 40px;
+                margin-bottom: 40px;
+
+                @include media-tablet {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    font-size: 1.3rem;
+                    line-height: 1.4rem;
+                }
+
+                @include media-mobile {
+                    text-align: justify;
+                    margin-bottom: 24px;
+                }
+            }
+
+            li {
+                font-family: $secondary-font;
+                font-size: 1.5rem;
+                line-height: 1.65rem;
+                letter-spacing: 0.06em;
+                padding-left: 14px;
+                margin-bottom: 12px;
+                position: relative;
+
+                @include media-mobile {
+                    margin-bottom: 5px;
+                }
+
+                &:after {
+                    content: url('assets/icons/dot.svg');
+                    position: absolute;
+                    top: -3px;
+                    left: 0;
+                }
+
+                span {
+                    font-weight: 700;
+                }
+            }
+        }
+
+        
+    }
+
+    
+
+    @include media-tablet {
+        width: 630px;
+        height: 350px;
+        top: calc(50% - 175px);
+        left: calc(50% - 315px);
+    }
+
+    @include media-mobile {
+        width: 240px;
+        height: 342px;
+        top: calc(50% - 171px);
+        left: calc(50% - 120px);
+    }
+}
